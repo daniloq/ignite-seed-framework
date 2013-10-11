@@ -5,4 +5,8 @@
 // Go to http://foundation.zurb.com/docs/ to find what you need.
 
 
-@import 'foundation';
+@import 'foundation'
+
+// Fix Bread Crumb Webkit Bug
+ul.breadcrumbs li:first-child:before
+  content: " "
