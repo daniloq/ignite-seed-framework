@@ -7,3 +7,213 @@
   .large-12.columns
     %h3 Buttons
     %a.seed-btn{:href => "#"} Default Button
+    
+.row
+  .large-12.columns
+    %h4.text-center Buttons
+    %hr/
+    %h5 Almost Flat Buttons
+    %table#doc-almost-flat-buttons
+      %thead
+        %tr
+          %th{style: "width:30%"} Button
+          %th{style: "width:30%"} class=""
+          %th Description
+      %tbody
+        %tr
+          %td
+            %button.button.primary{type: "button"} Primary
+          %td
+            %code button primary
+          %td Provides extra visual weight and identifies the primary action in a set of buttons
+        %tr
+          %td
+            %button.button.primary-dark{type: "button"} Primary Dark
+          %td
+            %code button primary-dark
+          %td Provides extra visual weight and identifies the primary action in a set of buttons
+        %tr
+          %td
+            %button.button.secondary{type: "button"} Secondary
+          %td
+            %code button secondary
+          %td Standard gray button with gradient
+        %tr
+          %td
+            %button.button.highlight{type: "button"} Highlight
+          %td
+            %code button highlight
+          %td To highlight some extraordinary action
+        %tr
+          %td
+            %button.button.highlight-dark{type: "button"} Highlight Dark
+          %td
+            %code button highlight-dark
+          %td To highlight some extraordinary action
+        %tr
+          %td
+            %button.button.info{type: "button"} Info
+          %td
+            %code button info
+          %td Used as an alternative to the default styles
+        %tr
+          %td
+            %button.button.info-dark{type: "button"} Info Dark
+          %td
+            %code button info-dark
+          %td Used as an alternative to the default styles
+        %tr
+          %td
+            %button.button.success{type: "button"} Success
+          %td
+            %code button success
+          %td Indicates a successful or positive action
+        %tr
+          %td
+            %button.button.success-dark{type: "button"} Success Dark
+          %td
+            %code button success-dark
+          %td Indicates a successful or positive action
+        %tr
+          %td
+            %button.button.success-darker{type: "button"} Success Darker
+          %td
+            %code button success-darker
+          %td Indicates a successful or positive action
+        %tr
+          %td
+            %button.button.success-darkest{type: "button"} Success Darkest
+          %td
+            %code button success-darkest
+          %td Indicates a successful or positive action
+        %tr
+          %td
+            %button.button.warning{type: "button"} Warning
+          %td
+            %code button warning
+          %td Indicates caution should be taken with this action
+        %tr
+          %td
+            %button.button.warning-dark{type: "button"} Warning Dark
+          %td
+            %code button warning-dark
+          %td Indicates caution should be taken with this action
+        %tr
+          %td
+            %button.button.alert{type: "button"} Alert
+          %td
+            %code button alert
+          %td Indicates a dangerous or potentially negative action
+        %tr
+          %td
+            %button.button.alert-dark{type: "button"} Alert Dark
+          %td
+            %code button alert-dark
+          %td Indicates a dangerous or potentially negative action
+        %tr
+          %td
+            %button.button.inverse{type: "button"} Inverse
+          %td
+            %code button inverse
+          %td Alternate dark gray button, not tied to a semantic action or use
+        %tr
+          %td
+            %button.button.inverse-dark{type: "button"} Inverse Dark
+          %td
+            %code button inverse-dark
+          %td Alternate dark gray button, not tied to a semantic action or use
+    %hr/
+    %h5 Different Sizes
+    %table
+      %thead
+        %tr
+          %th{style: "width:20%"} Button
+          %th{style: "width:20%"} class=""
+          %th Description
+      %tbody
+        %tr
+          %td
+            %button.button.tiny{type: "button"} Tiny
+          %td
+            %code button tiny
+          %td Tiny Button
+        %tr
+          %td
+            %button.button.small{type: "button"} Small
+          %td
+            %code button small
+          %td Small Button
+        %tr
+          %td
+            %button.button{type: "button"} Regular
+          %td
+            %code button
+          %td Regular Button
+        %tr
+          %td
+            %button.button.large{type: "button"} Large
+          %td
+            %code button large
+          %td Large Button
+    %hr/
+    %h5 Different Types
+    %table
+      %thead
+        %tr
+          %th{style: "width:20%"} Button
+          %th{style: "width:20%"} class=""
+          %th Description
+      %tbody
+        %tr
+          %td
+            %button.button.radius{type: "button"} Radius
+          %td
+            %code button radius
+          %td Radius Button
+        %tr
+          %td
+            %button.button.round{type: "button"} Round
+          %td
+            %code button round
+          %td Round Button
+        %tr
+          %td
+            %button.button.disabled{type: "button"} Disabled
+          %td
+            %code button disabled
+          %td Disabled Button
+    %hr/
+    #doc-almost-flat-button-groups.row
+      .large-12.columns
+        %h5 Almost Flat Buttons Groups
+        %ul.button-group
+          %li
+            %a.small.button{href: "#"} Button 1
+          %li
+            %a.small.button{href: "#"} Button 2
+          %li
+            %a.small.button{href: "#"} Button 3
+        %ul.button-group.radius
+          %li
+            %a.button.secondary{href: "#"} Button 1
+          %li
+            %a.button.secondary{href: "#"} Button 2
+          %li
+            %a.button.secondary{href: "#"} Button 3
+          %li
+            %a.button.secondary{href: "#"} Button 4
+        %ul.button-group.round.even-3
+          %li
+            %a.button.alert{href: "#"} Button 1
+          %li
+            %a.button.alert{href: "#"} Button 2
+          %li
+            %a.button.alert{href: "#"} Button 3
+        %ul.button-group.round.even-3
+          %li
+            %input.button.success{type: "submit", value: "Button 1"}/
+          %li
+            %input.button.success{type: "submit", value: "Button 2"}/
+          %li
+            %input.button.success{type: "submit", value: "Button 3"}/
+/ Buttons End

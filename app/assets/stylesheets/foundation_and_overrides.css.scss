@@ -1,0 +1,94 @@
+// Settings file to override Foundation variables
+// You can find the variables for each component at the bottom of their
+// doc page. We tried to name them to where they'd make sense just by reading them.
+// Go to http://foundation.zurb.com/docs/ to find what you need.
+@import "foundation";
+@import "seed/settings";
+// Fix Bread Crumb Webkit Bug
+ul.breadcrumbs li:first-child:before{
+  content: " ";
+}
+@mixin button-effect($bg:$primary-color){
+  $dark-bg: darken($bg, 5%);
+  $darker-bg: darken($bg, 10%);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color:$dark-bg !important;
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: $bg;
+    border-color:$darker-bg !important;
+  }
+}
+.disabled:hover{
+  opacity: 0.6 !important;
+}
+.button {
+  @include button-effect();
+}
+
+
+a,
+button,
+input[type="submit"]{
+  &.primary-dark {
+    @include button-effect($belize-hole);
+  }
+
+  &.secondary {
+    @include button-effect($clouds);
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25);
+  }
+  &.success{
+    @include button-effect($emerland);
+  }
+  &.success-dark{
+   @include button-effect($turquoise);
+  }
+  &.success-darker{
+     @include button-effect($nephritis);
+  }
+  &.success-darkest{
+     @include button-effect($green-sea);
+  }
+
+  &.alert{
+   @include button-effect($alizarin);
+  }
+  &.alert-dark{
+   @include button-effect($pomegranate);
+  }
+
+  &.info{
+   @include button-effect($sun-flower);
+  }
+  &.info-dark{
+   @include button-effect($orange);
+  }
+
+  &.warning{
+   @include button-effect($carrot);
+  }
+  &.warning-dark{
+   @include button-effect($pumpkin);
+  }
+
+  &.highlight{
+   @include button-effect($amethyst);
+  }
+  &.highlight-dark{
+   @include button-effect($wisteria);
+  }
+
+  &.inverse{
+   @include button-effect($wet-asphalt);
+  }
+  &.inverse-dark{
+   @include button-effect($midnight-blue);
+  }
+}
+
+
+
+
+
