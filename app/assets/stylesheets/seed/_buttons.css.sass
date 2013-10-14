@@ -1,0 +1,43 @@
+@import "foundation_and_overrides"
+
+a,
+.button, 
+input[type="submit"]
+  &.warning
+    background-color: $buttercup
+    &:hover
+      background-color: $dark-buttercup
+
+  &.default
+    background-color: $silver-sand
+    &:hover
+      background-color: $dark-silver-sand
+
+  &.danger
+    background-color: $cinnabar
+    &:hover
+      background-color: $dark-cinnabar
+
+  &.success
+    background-color: $shamrock
+    &:hover
+      background-color: $dark-shamrock
+
+  &.inverse
+    background-color: $pickled-bluewood
+    &:hover
+      background-color: $dark-pickled-bluewood
+
+  &.info
+    background-color: $curious-blue
+    &:hover
+      background-color: $dark-curious-blue
+
+  &.disabled
+    background-color: $silver
+    &:hover
+      background-color: $silver
+.button
+  border: 0
+  box-shadow: none
+  @include button-style($radius: 4px)
