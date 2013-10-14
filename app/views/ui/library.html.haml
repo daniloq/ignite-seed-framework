@@ -71,7 +71,7 @@
                 %a{href: "#"} List Item
           %li
             %a{href: "#"} Menu Item
-
+%br
 .row
   .large-12.columns
     %h3 Breadcrumbs
@@ -87,6 +87,29 @@
 
 .row
   .large-12.columns
+    %h3 Pagination
+    %ul.pagination
+      %li.arrow.unavailable
+        %a{href: ""} «
+      %li.current
+        %a{href: ""} 1
+      %li
+        %a{href: ""} 2
+      %li
+        %a{href: ""} 3
+      %li
+        %a{href: ""} 4
+      %li.unavailable
+        %a{href: ""} …
+      %li
+        %a{href: ""} 12
+      %li
+        %a{href: ""} 13
+      %li.arrow
+        %a{href: ""} »
+
+.row
+  .large-12.columns
     %h3 Inputs
     .large-3.columns
       %input{placeholder: "Inactive", type: "text"}
@@ -96,3 +119,16 @@
       %input.success{placeholder: "Success", type: "text"}
     .large-3.columns
       %input{placeholder: "Disabled", type: "text"}
+      
+.row
+  .large-12.columns
+    %h3 Block Grid
+    %ul.large-block-grid-4
+      %li
+        %img{src: "/assets/cat.jpg"}
+      %li
+        %img{src: "/assets/cat.jpg"}
+      %li
+        %img{src: "/assets/cat.jpg"}
+      %li
+        %img{src: "/assets/cat.jpg"}
