@@ -3,42 +3,73 @@
 a,
 .button, 
 input[type="submit"]
-  &.warning
-    background-color: $buttercup
+  &.primary
+    color: $primary-color
+    border: 2px $primary-color solid
+    background-color: transparent
     &:hover
-      background-color: $dark-buttercup
+      color: $dark-mountain-meadow
+      background-color: $primary-color
+
+  &.warning
+    color: $buttercup
+    border: 2px $buttercup solid
+    background-color: transparent
+    &:hover
+      color: $dark-buttercup
+      background-color: $buttercup
 
   &.default
-    background-color: $silver-sand
+    color: $silver-sand
+    border: 2px $silver-sand solid
+    background-color: transparent
     &:hover
-      background-color: $dark-silver-sand
+      color: $dark-silver-sand
+      background-color: $silver-sand
 
   &.danger
-    background-color: $cinnabar
+    color: $cinnabar
+    border: 2px $cinnabar solid
+    background-color: transparent
     &:hover
-      background-color: $dark-cinnabar
+      color: $dark-cinnabar
+      background-color: $cinnabar
 
   &.success
-    background-color: $shamrock
+    color: $shamrock
+    border: 2px $shamrock solid
+    background-color: transparent
     &:hover
-      background-color: $dark-shamrock
+      color: $dark-shamrock
+      background-color: $shamrock
 
   &.inverse
-    background-color: $pickled-bluewood
+    color: $pickled-bluewood
+    border: 2px $pickled-bluewood solid
+    background-color: transparent
     &:hover
-      background-color: $dark-pickled-bluewood
+      color: $dark-pickled-bluewood
+      background-color: $pickled-bluewood
 
   &.info
-    background-color: $curious-blue
+    color: $curious-blue
+    border: 2px $curious-blue solid
+    background-color: transparent
     &:hover
-      background-color: $dark-curious-blue
+      color: $dark-curious-blue
+      background-color: $curious-blue
 
   &.disabled
-    background-color: $silver
+    color: $silver
+    border: 2px $silver solid
+    background-color: transparent
     &:hover
-      background-color: $silver
+      color: $silver
+      background-color: transparent
 
 .button
-  border: 0
+  border: 2px
+  font-size: 12px
   box-shadow: none
-  @include button-style($radius: 4px)
+  padding: 15px 20px
+  @include button-style($radius: 8px)

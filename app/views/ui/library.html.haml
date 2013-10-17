@@ -2,16 +2,17 @@
   .large-12.columns
     %h1 Ignite's Seed UI Library
     %h6.subheader Version 1.0.0 Built on Foundation
-
+%br
+%br
 .row
   .large-12.columns
     %h3 Button Sizes
-    %a.tiny.button{:href => "#"} Tiny Button
-    %a.small.button{:href => "#"} Small Button
-    %a.button{:href => "#"} Regular Button
-    %a.large.button{:href => "#"} Large Button
+    %a.tiny.button.primary{:href => "#"} Tiny Button
+    %a.small.button.primary{:href => "#"} Small Button
+    %a.button.primary{:href => "#"} Regular Button
+    %a.large.button.primary{:href => "#"} Large Button
     %h3 Button Colors
-    %a.button{:href => "#"} Primary Button
+    %a.button.primary{:href => "#"} Primary Button
     %a.button.warning{:href => "#"} Warning Button
     %a.button.default{:href => "#"} Default Button
     %a.button.danger{:href => "#"} Danger Button
@@ -19,7 +20,8 @@
     %a.button.inverse{:href => "#"} Inverse Button
     %a.button.info{:href => "#"} Info Button
     %a.button.disabled{:href => "#"} Disable Button
-
+%br
+%br
 .row
   .large-12.columns
     %h3 Menu
@@ -72,6 +74,7 @@
           %li
             %a{href: "#"} Menu Item
 %br
+%br
 .row
   .large-12.columns
     %h3 Breadcrumbs
@@ -84,7 +87,8 @@
         %a{href: "#"} Pretty
       %li.current
         %a{href: "#"} Awesome
-
+%br
+%br
 .row
   .large-12.columns
     %h3 Pagination
@@ -107,7 +111,8 @@
         %a{href: ""} 13
       %li.arrow
         %a{href: ""} »
-
+%br
+%br
 .row
   .large-12.columns
     %h3 Inputs
@@ -118,8 +123,41 @@
     .large-3.columns
       %input.success{placeholder: "Success", type: "text"}
     .large-3.columns
-      %input{placeholder: "Disabled", type: "text"}
-      
+      %input{disabled: "disabled", placeholder: "Disabled", type: "text"}
+%br
+%br
+.row
+  .large-12.columns
+    %h3 Checkboxes and Radio Buttons
+    %form.custom
+      .large-6.columns
+        %label{for: "radio1"}
+          %input#radio1{checked: "checked", name: "radio1", style: "display:none;", type: "radio"}/
+          %span.custom.radio.checked
+          Radio Button 1
+        %label{for: "radio1"}
+          %input#radio1{name: "radio1", style: "display:none;", type: "radio"}/
+          %span.custom.radio
+          Radio Button 2
+        %label{for: "radio1"}
+          %input#radio1{disabled: "disabled", name: "radio1", style: "display:none;", type: "radio"}/
+          %span.custom.radio
+          Radio Button 3
+      .large-6.columns
+        %label{for: "checkbox1"}
+          %input#checkbox1{style: "display: none;", type: "checkbox"}/
+          %span.custom.checkbox
+          Label for Checkbox
+        %label{for: "checkbox2"}
+          %input#checkbox2{checked: "checked", style: "display: none;", type: "checkbox"}/
+          %span.custom.checkbox.checked
+          Label for Checkbox
+        %label{for: "checkbox3"}
+          %input#checkbox3{checked: "checked", style: "display: none;", type: "checkbox"}/
+          %span.custom.checkbox.checked
+          Label for Checkbox
+%br
+%br
 .row
   .large-12.columns
     %h3 Block Grid
