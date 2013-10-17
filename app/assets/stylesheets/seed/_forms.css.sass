@@ -1,11 +1,13 @@
 @import "foundation_and_overrides"
 
 input.success
-  border: 2px $shamrock solid
-  background-color: $light-shamrock
+  border: 2px $shamrock solid !important
+  background-color: $light-shamrock !important
+  &:focus
+    border: 2px #cccccc solid !important
+    background-color: #fff !important
   
 input.disabled
   &:focus
     border: 2px #cccccc solid
     background-color: #fff
-  
